@@ -287,7 +287,7 @@ h1 {
 	color: white;
 	font-weight: bold;
 	text-align: center;
-	background-color: #212123;
+	background-color: #A33235;
 	margin-top: 10px;
 }
 h2 {
@@ -307,10 +307,8 @@ h3 {
 }
 
 #AON > h3 {
-	background-color: #8e8b8b;
 	padding: 10px 0;
-	font-size: 1.5
-	em;
+	font-size: 1.5em;
 }
 #emergency, #non-emergency, #international-response {
 	float: right;

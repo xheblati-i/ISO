@@ -1,0 +1,431 @@
+/*==================================
+	1.Style all body
+===================================*/
+
+* {
+ margin: 0;
+ padding: 0;
+}
+/*useful for browsers that do not fully support all html5 tags*/
+header, nav, main, section, article, aside, footer{
+	display:block;
+}
+body {
+	font-family: tahoma,verdana,sans-serif;
+}
+/*style the links*/
+a {
+	text-decoration: none;
+	color: inherit;
+}
+ul li {
+	list-style-type: none;
+}
+.clear {
+	clear: both;
+}
+
+/*==================================
+	2.Style Top container
+===================================*/
+
+/*keeps header and nav always top*/
+#containerTop {
+	width: 100%;
+	position: fixed;
+	z-index: 90;
+	background-color: white;
+}
+header {
+	height:150px;
+	max-width: 1200px;
+	width: 100%;
+	margin:0 auto;
+}
+header img {
+	max-width: 400px;
+	width: 100%;
+	max-height: 65px;
+	height: 100%;
+	float: left;
+	position: relative;	
+}
+#logoIMG {
+	position: relative;
+	padding-top: 60px;
+	padding-left: 20px;
+
+}
+
+/*top nav style*/
+#top-menu {
+	min-height:30px;
+ 	height: 100%;
+ 	position: relative;
+	float: right;	
+	z-index: 70;
+}
+
+#top-menu ul {
+ 	float:left;
+ 	padding:0; 
+ 	margin:0;
+}
+ 	 	
+#top-menu li {
+ 	float:left;
+ 	color:black;
+ 	border-left:1px solid black;
+ 	min-height:20px;
+ 	height: 100%;
+ 	list-style:none;
+ 	padding: 5px 10px 0 10px;
+ 	font-size: 0.8em;
+ 	color:black;
+}
+ 	 	
+#top-menu a:hover {
+ text-decoration:underline;
+ color: black;
+}
+	 	
+#top-menu a {
+	text-decoration:none;
+	color: black;
+}	 	
+ 	 	
+#top-menu input {
+ 	height:25px;
+ 	border:none;
+ 	width:180px;
+ 	font-weight:bold;
+ 	color:black;
+ 	font-size:110%;
+ 	padding-left:10px;
+ 	position:relative;
+}
+/************************/
+#menu {
+	height:44px;
+	margin:0 auto;
+	background-color: #333333;	
+}
+/*used for the menu bar that will only show in narrow screens*/
+.handle{
+	width: 100%;
+	background-color: #333333;
+	text-align: left;
+	box-sizing: border-box;
+	padding: 10px 10px;
+	cursor: pointer;
+	color: white;
+	display: none;
+}
+
+/*=======================================
+	3.Style the nav bar for desktop view
+=========================================*/
+#menu ul {
+	
+	overflow: hidden;
+	color: white;
+	text-align: center;
+	-webkit-transition: max-height 0.4s;
+	-o-transition: max-height 0.4s;
+	-moz-transition: max-height 0.4s;
+	-ms-transition: max-height 0.4s;
+}
+
+/*make the list line up horizontally*/
+#menu > ul > li {
+	display: inline-block;
+	padding: 10px;
+}
+
+#menu  ul  li:hover {
+	background-color: #CC0000;
+	color: black;
+	font-weight: bold;
+}
+
+/*style the hover or click effect*/
+.nav-content {         /*holds the second list*/
+	position: absolute;
+	max-height: 0; 
+	overflow: hidden;
+	margin: 10px;
+}
+.nav-sub a {
+	width: 150px;
+}
+.nav-content a:hover {
+	text-decoration: underline;
+}
+
+.nav-sub {
+	padding: 10px 5px;
+	background-color: #333333;
+}
+
+.nav-sub ul li a {
+	display: inline-block;
+	padding: 5px 0;
+}
+.nav-sub ul li {
+	background-color: #CC0000;
+	list-style-type: none;
+	border:1px solid #333333;
+}
+.nav-sub ul {
+	text-align: center;
+}
+
+.nav-item {
+	padding: 15px;
+}
+.nav-item:focus {
+	background-color: #CC0000;
+}
+
+/*triggers the click effect*/
+.nav-item:focus ~ .nav-content {
+	max-height: 400px;
+	ms-transition: max-height 0.4s;
+	moz-transition: max-height 0.4s;
+	o-transition: max-height 0.4s;
+	webkit-transition: max-height 0.4s;
+}
+
+/*==========================================
+	4.adjust the nav bar for narrower views
+============================================*/
+@media screen and (max-width: 1000px) {
+	nav ul {
+		max-height: 0;
+		background-color: gray;
+	}
+	.show {
+		max-height: 20em
+	}
+	nav ul li {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 10px;
+		text-align: left;
+	}
+	.handle {
+		display: block;
+	}
+	nav > ul > li {
+	display: inline-block;
+	padding: 10px;
+	}
+	.nav-item {
+	padding: 0px;
+	}
+	.nav-sub {
+	position: relative;
+	text-align: right;
+	width: 300px;
+	left:150px;
+	bottom: 20px;
+	}
+	.nav-item:focus {
+	background-color: transparent;
+	}
+	#top-menu {
+		display: none;
+	}
+
+}
+/*======================================================
+	4. Style the body
+========================================================*/
+/*keeps main, aside and footer underneath the nav*/
+#containerBot {
+	max-width: 1200px;
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+	bottom: -180px;
+}
+
+main {
+	max-width: 72%;
+	margin: 1% 0 0 1%;
+	position: relative;
+	float: left;
+	background-color: ;
+}
+
+aside {
+	max-width: 24%;
+	margin: 1% 1% 0 0;
+	position: relative;
+	float: right;
+}
+
+section {
+	background-color: ;
+
+}
+
+article {
+	background-color: ;
+	padding-left:2%;
+	padding-bottom: 10px;
+}
+article img {
+	margin-right: 25px;
+	margin-bottom: 15;
+	float: left;
+}
+
+
+/*no more than one h1 per page*/
+h1 {
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	background-color: #212123;
+	margin-top: 10px;
+}
+h2 {
+	padding: 10px 0;
+
+}
+
+h3 {
+	text-align: center;
+}
+
+#AON {
+	width: 60%;
+	height: 300px;
+	margin: 1%;
+	float: left;
+}
+
+#AON > h3 {
+	background-color: #8e8b8b;
+	padding: 10px 0;
+	font-size: 1.5
+	em;
+}
+#emergency, #non-emergency, #international-response {
+	float: right;
+	margin: 20px 0;
+	width: 100%;
+	background-color: gray;
+	padding: 15px;
+}
+#emergency {
+	background-color: #CC0000;
+	color: white;
+
+}
+
+#sectionRight {
+	float: right;
+	width: 35%;
+	position: relative;
+	text-align: center;
+	margin: 10px 0;
+
+}
+
+.sidebarOne {
+	margin: 10px 0;
+	border: 1px solid #8e8b8b;
+	border-radius: 5px;
+}
+
+.sidebarTwo {
+	margin: 10px 0;
+	border: 1px solid #8e8b8b;
+}
+.sideH2 {
+	font-size: 1em;
+	text-align: center;
+	background-color: #1B3564;
+	color: white;
+}
+.fb-page {
+	float: right;
+}
+
+footer {
+  clear: both;
+  width: 100%;
+  height: 62px;
+  color: #FFF;
+  letter-spacing: 0.03em;
+  padding: 10px 0px !important;
+
+  background-color: #636363;
+
+}
+
+footer > ul > li {
+	display:inline-block;
+}
+.info {
+	float: right;
+	font-size: 0.9em;
+	margin-right: 100px;
+	clear: both;
+	margin-bottom: 10px;
+}
+.contact{
+	float: right;
+	font-size: 0.7em;
+	margin-right: 100px;
+	color: #8e8b8b
+}
+
+
+
+/*======================================================
+	4. Other Media Queries 
+========================================================*/
+@media screen and (max-width: 1200px) {
+	header, nav, #menu, #containerBot {
+		max-width: 100%
+	}
+
+/*****************************************************/
+
+@media(max-width:750px){
+	main{
+	float:none;
+	max-width:100%;
+	margin:0 auto;
+	}
+	aside{
+	float:none;
+	max-width:100%;
+	margin:0 auto;
+	}
+	#containerBot {
+		bottom: -190px;
+	}
+}
+@media(max-width:450px){
+	#logoIMG {
+		max-width: 450px;
+		width: 100%;
+		height: 100%;
+		padding: 0;
+	}
+	header {
+		max-height: 50px;
+		height: 100%;
+	}
+	#containerBot {
+	width: 100%;
+	position: relative;
+	bottom: -105px;
+}
+
+}
+

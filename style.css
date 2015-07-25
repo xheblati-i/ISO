@@ -51,7 +51,7 @@ header img {
 	max-height: 65px;
 	height: 100%;
 	float: left;
-	position: relative;	
+	position: relative;
 }
 #logoIMG {
 	position: relative;
@@ -65,16 +65,16 @@ header img {
 	min-height:30px;
  	height: 100%;
  	position: relative;
-	float: right;	
+	float: right;
 	z-index: 70;
 }
 
 #top-menu ul {
  	float:left;
- 	padding:0; 
+ 	padding:0;
  	margin:0;
 }
- 	 	
+
 #top-menu li {
  	float:left;
  	color:black;
@@ -86,17 +86,17 @@ header img {
  	font-size: 0.8em;
  	color:black;
 }
- 	 	
+
 #top-menu a:hover {
  text-decoration:underline;
  color: black;
 }
-	 	
+
 #top-menu a {
 	text-decoration:none;
 	color: black;
-}	 	
- 	 	
+}
+
 #top-menu input {
  	height:25px;
  	border:none;
@@ -105,13 +105,13 @@ header img {
  	color:black;
  	font-size:110%;
  	padding-left:10px;
- 	position:relative;
+
 }
 /************************/
 #menu {
 	height:44px;
 	margin:0 auto;
-	background-color: #333333;	
+	background-color: #333333;
 }
 /*used for the menu bar that will only show in narrow screens*/
 .handle{
@@ -129,7 +129,7 @@ header img {
 	3.Style the nav bar for desktop view
 =========================================*/
 #menu ul {
-	
+
 	overflow: hidden;
 	color: white;
 	text-align: center;
@@ -156,7 +156,7 @@ header img {
 /*style the hover or click effect*/
 .nav-content {         /*holds the second list*/
 	position: absolute;
-	max-height: 0; 
+	max-height: 0;
 	overflow: hidden;
 	margin: 10px;
 }
@@ -253,7 +253,7 @@ header img {
 	position: relative;
 	margin: 0 auto;
 	clear: both;
-	z-index: -1;
+	z-index: 1;
 }
 
 main {
@@ -386,7 +386,7 @@ footer > ul > li {
 }
 
 /*======================================================
-	6. About Us Style 
+	6. About Us Style
 ========================================================*/
 .aboutus {
 	margin-left: 1%;
@@ -421,7 +421,7 @@ footer > ul > li {
 }
 
 /*======================================================
-	6. Policies Style 
+	6. Policies Style
 ========================================================*/
 .policies > h2 {
 	font-size: 1em;
@@ -429,7 +429,7 @@ footer > ul > li {
 }
 
 /*======================================================
-	0. Other Media Queries 
+	0. Other Media Queries
 ========================================================*/
 @media screen and (max-width: 1200px) {
 	header, nav, #menu, #containerBot {
@@ -467,4 +467,3 @@ footer > ul > li {
 }
 
 }
-

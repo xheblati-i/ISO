@@ -254,6 +254,7 @@ header img {
 	margin: 0 auto;
 	clear: both;
 	z-index: 1;
+	bottom: -190px;
 }
 
 main {

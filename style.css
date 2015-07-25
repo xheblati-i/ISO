@@ -251,6 +251,7 @@ header img {
 	position: relative;
 	margin: 0 auto;
 	bottom: -180px;
+	clear: both;
 }
 
 main {
@@ -406,18 +407,19 @@ footer > ul > li {
 	border-radius: 100px;
 	float: left;
 }
-.imgCentered > .teamIMG {
-	margin: 0 2% 0 2%;
-	max-width: 130px;
-	width:100%;
-	max-height:130px;
+
+.teamIMG {
+	float: left;
+	text-align: center;
+	margin: 0 2%;
+	max-width: 150px;
+}
+.teamIMG img {
+	width: 100%;
+	max-height: 130px;
 	height: 100%;
 }
 
-.imgCentered {
-	margin: 0 10%;
-	max-height: 100%;
-}
 /*======================================================
 	0. Other Media Queries 
 ========================================================*/

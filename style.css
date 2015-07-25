@@ -250,7 +250,6 @@ header img {
 	width: 100%;
 	position: relative;
 	margin: 0 auto;
-	bottom: -180px;
 	clear: both;
 }
 
@@ -292,7 +291,6 @@ h1 {
 	font-weight: bold;
 	text-align: center;
 	background-color: #A33235;
-	margin-top: 10px;
 }
 h2 {
 	padding: 10px 0;
@@ -337,7 +335,6 @@ h3 {
 }
 
 .sidebarOne {
-	margin: 10px 0;
 	border: 1px solid #8e8b8b;
 	border-radius: 5px;
 }
